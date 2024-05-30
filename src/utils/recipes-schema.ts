@@ -11,7 +11,7 @@ export const SearchFilterSchema = z.object({
     category: z.string()
 })
 
-const DrinkAPIResponse = z.object({
+export const DrinkAPIResponse = z.object({
     idDrink: z.string(),
     strDrink: z.string(),
     strDrinkThumb: z.string(),
