@@ -6,6 +6,7 @@ export default function IndexPage() {
     const drinks =  useAppStore((state) => state.drinks)
 
     const hasDrinks = useMemo(() => drinks.drinks.length, [drinks])
+
     return (
         <>
             <h1 className="text-6xl font-extralight">Recetas</h1>
@@ -13,7 +14,7 @@ export default function IndexPage() {
             {hasDrinks ? (
                 <div className="container p-5 grid grid-cols-1 md:grid-cols-3 2xl:grid-cols-4 my-10 gap-10">
                     {drinks.drinks.map(drink => (
-                        <DrinkCart 
+                        <DrinkCart
                         key={drink.idDrink}
                         drink={drink}
                         />
