@@ -52,13 +52,13 @@ export default function Header() {
                             className={({ isActive }) =>
                                 isActive ? 'text-orange-500 uppercase font-bold' : 'text-white uppercase font-bold'
                             }
-                        >Inicio</NavLink>
+                        >Home</NavLink>
                         <NavLink
                             to='/favorites'
                             className={({ isActive }) =>
                                 isActive ? 'text-orange-500 uppercase font-bold' : 'text-white uppercase font-bold'
                             }
-                        >Favoritos</NavLink>
+                        >Favorites</NavLink>
                     </nav>
                 </div>
                 {isHome && (
